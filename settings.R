@@ -1,5 +1,5 @@
 # package setup
-packages <- c("tidyverse", "lubridate", "data.table", "xgboost", "mlr3verse", "randomForest", "checkmate")
+packages <- c("tidyverse", "lubridate", "data.table", "xgboost", "mlr3verse", "randomForest", "checkmate", "readxl")
 for (pkg in packages) {
   if (!require(pkg, character.only = TRUE)) {
     install.packages(pkg, dependencies = TRUE)
