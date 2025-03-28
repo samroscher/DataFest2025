@@ -1,0 +1,17 @@
+# 1. Paket laden
+install.packages("haven")     # Nur beim ersten Mal nötig
+library(haven)
+
+# 2. .dta-Datei einlesen
+gles <- read_dta("/Users/silaskaatz/Documents/GitHub/DataFest2025/silas/ZA5770_v1-0-0.dta")   
+
+# 3. Struktur anschauen (optional, aber praktisch)
+str(gles)
+head(gles)
+
+# 4. Optional: In klassischen data.frame umwandeln
+datenschatz_df <- as.data.frame(gles)
+
+# 5. Abspeichern als .RData (mehrere Objekte möglich)
+save(datenschatz_df, file = "gles.RData")
+
