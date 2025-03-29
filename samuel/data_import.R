@@ -14,4 +14,4 @@ cs.wm.2023 <- fread(paste0(path, "/data/raw/HiDrive/cross_section/CampusFile_WM_
 
 # description data
 cs.summary <- read_xlsx(paste0(path, "/data/raw/HiDrive/cross_section/number_municipalities_cross.xlsx"))
-panel.summary <- read_xlsx(paste0(path, "/data/raw/HiDrive/panel/number_observations_panel.xlsx"))
+# panel.summary <- read_xlsx(paste0(path, "/data/raw/HiDrive/panel/number_observations_panel.xlsx"))

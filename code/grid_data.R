@@ -1,7 +1,5 @@
 grid.data <- fread(paste0(path, "/data/raw/grid_data/100m_grid.csv"))
 
-# grid data remove column "vac_2022" ~ 90% NAs
-grid.data[, vac_2022 := NULL]
 grid.data[, `:=` (
   bs_delta = bs_20 / bs_2005,
   pop_delta = pop_20 / pop_05,
