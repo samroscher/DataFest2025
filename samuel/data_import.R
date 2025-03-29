@@ -8,13 +8,10 @@ cs.wk.2023 <- fread(paste0(path, "/data/raw/HiDrive/cross_section/CampusFile_WK_
 cs.wm.2023 <- fread(paste0(path, "/data/raw/HiDrive/cross_section/CampusFile_WM_2023.csv"))
 
 # panel data
-panel.hk <- fread(paste0(path, "/data/raw/HiDrive/panel/CampusFile_HK_cities.csv"))
-panel.wk <- fread(paste0(path, "/data/raw/HiDrive/panel/CampusFile_WK_cities.csv"))
-panel.wm <- fread(paste0(path, "/data/raw/HiDrive/panel/CampusFile_WM_cities.csv"))
+# panel.hk <- fread(paste0(path, "/data/raw/HiDrive/panel/CampusFile_HK_cities.csv"))
+# panel.wk <- fread(paste0(path, "/data/raw/HiDrive/panel/CampusFile_WK_cities.csv"))
+# panel.wm <- fread(paste0(path, "/data/raw/HiDrive/panel/CampusFile_WM_cities.csv"))
 
 # description data
 cs.summary <- read_xlsx(paste0(path, "/data/raw/HiDrive/cross_section/number_municipalities_cross.xlsx"))
 panel.summary <- read_xlsx(paste0(path, "/data/raw/HiDrive/panel/number_observations_panel.xlsx"))
-
-# grid data remove column "vac_2022" ~ 90% NAs
-grid.data[, vac_2022 := NULL]

@@ -10,4 +10,4 @@ files <- list.files(
   ignore.case = TRUE,
   recursive = TRUE
 )
-lapply(files, source)
+#lapply(files, source)
